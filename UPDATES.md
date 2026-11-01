@@ -3,6 +3,9 @@
 Format and rules: see `AGENTS.md` §2.3–2.4. Newest entry on top.
 Entries above the first `(merged into main)` marker are pending on branch `a`.
 
+## [2026-11-01 21:52]
+15. Hero section (profile info area above "About me") on the home page now has a soft blue background instead of the dark-teal-tinted gradient — Impact: the top of the home page reads lighter and more welcoming before the About me section.
+
 ## [2026-11-01 21:42]
 1. Committed the pre-existing uncommitted work (research.html, cv.html, css/, js/, assets/, images/, edited index.html) as a baseline on new branch `a` — Impact: the starting point is saved, so every later change can be diffed or reverted individually.
 2. Rewrote `css/styles.css` keeping the theme (dark-teal header/footer, monospace headings, green-teal links), removing wedding-template leftovers (RSVP, countdown, details, timeline styles) and moving page-specific inline styles into it — Impact: consistent look on every page; one place to tune colours and fonts.
