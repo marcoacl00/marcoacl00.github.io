@@ -1,9 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Marco Leitão</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Leitão - Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+
 </head>
 <body>
-  <h1>Hello!!</h1>
+    <header>
+        <nav>
+            <div class="logo">Marco Leitão</div>
+            <ul class="nav-links">
+                <li><a href="index.html">About me</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="page-spacer" aria-hidden="true"></div>
+    <style>
+    .page-spacer {
+        height: 32px;
+        width: 100%;
+    }
+    </style>
+    <section class="hero" style="margin-bottom:0px;">
+        <div class="container" style="display:flex;flex-direction:column;align-items:center;gap:4px;flex-wrap:wrap;">
+            <figure style="margin:0;display:flex;flex-direction:column;align-items:center;"></figure>
+                <img src="assets/1691430333522.jpg" alt="Marco Leitão" class="profile-photo" style="max-width:512px;width:100%;height:auto;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <div style="text-align:center;">
+                <h1 style="margin:8px 0 0;font-family:Arial, Helvetica, sans-serif;">Me</h1>
+                </div>
+                <figcaption style="margin-top:8px;color:#555;font-family:Montserrat, sans-serif;font-size:16px;text-align:center;">as of August 2023</figcaption>
+            </figure>
+            
+        </div>
+    </section>
+    
+    <section id="about" class="about" style="margin-top:0;padding-top:0;">
+        <div class="container" style="padding-top:0;">
+            <p class="intro-text" style="font-size:24px;">Hello! I am a PhD student in particle physics, currently based at IPhT-Saclay for a research stay until January 2027. My work is supervised by <a href="https://th-dep.web.cern.ch/roster/teixeira-de-almeida-milhano-jose-guilherme" target="_blank" >Guilherme Milhano</a> (LIP/IST), <a href="https://ftae.ugr.es/pages/member/member/155" target="_blank">Alba Soto-Ontoso</a> (U. Granada) and <a href="https://soyez.fastjet.fr/" target="_blank">Gregory Soyez</a> (IPhT). I also spent one year of my PhD at LIP-Lisbon. I did my undergraduate studies at University of Porto and my master's at Instituto Superior Técnico, University of Lisbon. 
+            <br>
+            <br>
+            My research focuses on QCD phenomenology, with an emphasis in the perturbative evolution of particles both in vacuum and in a dense medium. Alongside this, a major interest of mine is in scientific computing, namely numerical simulation methods, high performance computing and Machine Learning tools, which I employ in my PhD research on a regular basis.
+            <br>
+            <br>
+            I am also interested in the training of young undergraduate students, and supporting independent, curiosity-driven projects - especially those that connect different areas of physics and computation.
+
+            </p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p class="footer-email">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:[your-email]">[your-email]</a>
+        </p>
+        <ul class="footer-links">
+            <li>
+                <a href="[linkedin-url]" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="[inspire-url]" target="_blank" aria-label="INSPIRE-HEP">
+                    <i class="fas fa-atom"></i> INSPIRE
+                </a>
+            </li>
+            <li>
+                <a href="[orcid-url]" target="_blank" aria-label="ORCID">
+                    <i class="fab fa-orcid"></i> ORCID
+                </a>
+            </li>
+            <li>
+                <a href="[cienciavitae-url]" target="_blank" aria-label="CiênciaVitae">
+                    <i class="fas fa-id-card"></i> CiênciaVitae
+                </a>
+            </li>
+        </ul>
+    </footer>
+
 </body>
 </html>

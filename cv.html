@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Leitão - CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .page-spacer {
+            height: 72px;
+            width: 100%;
+        }
+
+        /* CV layout */
+        .cv-page {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 2rem 2rem 4rem;
+        }
+
+        .cv-page h1 {
+            font-family: var(--font-title);
+            font-size: 2.4rem;
+            margin-bottom: 0.25rem;
+            color: var(--secondary-color);
+        }
+
+        .cv-page .cv-subtitle {
+            font-family: var(--font-body);
+            font-size: 1.05rem;
+            color: #444;
+            margin-bottom: 0.5rem;
+        }
+
+        .cv-download {
+            display: inline-block;
+            margin-top: 0.75rem;
+            margin-bottom: 2rem;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: var(--links-color);
+            border: 1px solid var(--links-color);
+            padding: 0.4rem 1rem;
+            border-radius: 3px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .cv-download:hover {
+            background: var(--links-color);
+            color: #fff;
+        }
+
+        /* Section headings */
+        .cv-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .cv-section-title {
+            font-family: var(--font-section-title);
+            font-size: 1.5rem;
+            color: rgba(25, 59, 73, 0.9);
+            border-bottom: 2px solid rgba(25, 59, 73, 0.25);
+            padding-bottom: 0.3rem;
+            margin-bottom: 1.2rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* Generic entry block */
+        .cv-entry {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.4rem;
+        }
+
+        .cv-entry-date {
+            min-width: 110px;
+            font-family: var(--font-body);
+            font-size: 0.88rem;
+            color: #666;
+            padding-top: 0.15rem;
+            white-space: nowrap;
+        }
+
+        .cv-entry-body {
+            flex: 1;
+        }
+
+        .cv-entry-title {
+            font-family: var(--font-body);
+            font-weight: bold;
+            font-size: 1rem;
+            color: var(--secondary-color);
+            margin-bottom: 0.1rem;
+        }
+
+        .cv-entry-title a {
+            color: var(--links-color);
+        }
+
+        .cv-entry-sub {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        .cv-entry-detail {
+            font-family: var(--font-body);
+            font-size: 0.88rem;
+            color: #555;
+            margin-top: 0.2rem;
+        }
+
+        /* Papers list */
+        .cv-paper {
+            margin-bottom: 1.4rem;
+        }
+
+        .cv-paper-title {
+            font-family: var(--font-body);
+            font-weight: bold;
+            font-size: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .cv-paper-title a {
+            color: var(--links-color);
+        }
+
+        .cv-paper-authors {
+            font-family: var(--font-body);
+            font-size: 0.92rem;
+            color: #444;
+            margin-top: 0.15rem;
+        }
+
+        .cv-paper-journal {
+            font-family: var(--font-body);
+            font-size: 0.88rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.1rem;
+        }
+
+        /* Talks */
+        .cv-talk-venue {
+            font-family: var(--font-body);
+            font-size: 0.88rem;
+            color: #555;
+            margin-top: 0.1rem;
+        }
+
+        /* Prizes */
+        .cv-prize-desc {
+            font-family: var(--font-body);
+            font-size: 0.88rem;
+            color: #555;
+            margin-top: 0.1rem;
+        }
+
+        /* Mentoring */
+        .cv-mentee {
+            font-family: var(--font-body);
+            font-size: 0.88rem;
+            color: #555;
+            margin-top: 0.1rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            .cv-entry {
+                flex-direction: column;
+                gap: 0.2rem;
+            }
+            .cv-entry-date {
+                min-width: unset;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Marco Leitão</div>
+            <ul class="nav-links">
+                <li><a href="index.html">About me</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-spacer" aria-hidden="true"></div>
+
+    <div class="cv-page">
+
+        <h1>Curriculum Vitae</h1>
+        <p class="cv-subtitle">Marco Leitão &mdash; PhD student in particle physics</p>
+        <!-- Replace href with the actual path to your PDF CV -->
+        <a class="cv-download" href="assets/cv.pdf" target="_blank">
+            <i class="fas fa-file-pdf"></i> Download PDF
+        </a>
+
+        <!-- ==================== EDUCATION ==================== -->
+        <div class="cv-section">
+            <h2 class="cv-section-title">Education</h2>
+
+            <div class="cv-entry">
+                <div class="cv-entry-date">2022 &ndash; present</div>
+                <div class="cv-entry-body">
+                    <div class="cv-entry-title">PhD in Physics</div>
+                    <div class="cv-entry-sub">LIP / Instituto Superior Técnico, University of Lisbon</div>
+                    <div class="cv-entry-detail">Supervised by Guilherme Milhano, Alba Soto-Ontoso, and Gregory Soyez.<br>
+                    Research stay at IPhT-Saclay (2025&ndash;2027).</div>
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-date">2020 &ndash; 2022</div>
+                <div class="cv-entry-body">
+                    <div class="cv-entry-title">MSc in Engineering Physics</div>
+                    <div class="cv-entry-sub">Instituto Superior Técnico, University of Lisbon</div>
+                    <div class="cv-entry-detail">Thesis title: [Thesis title here]</div>
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-date">2017 &ndash; 2020</div>
+                <div class="cv-entry-body">
+                    <div class="cv-entry-title">BSc in Physics</div>
+                    <div class="cv-entry-sub">University of Porto</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ==================== RESEARCH EXPERIENCE ==================== -->
+        <div class="cv-section">
+            <h2 class="cv-section-title">Research Experience</h2>
+
+            <div class="cv-entry">
+                <div class="cv-entry-date">2025 &ndash; 2027</div>
+                <div class="cv-entry-body">
+                    <div class="cv-entry-title">Research Stay &mdash; IPhT-Saclay</div>
+                    <div class="cv-entry-sub">Institut de Physique Théorique, CEA Saclay, France</div>
+                    <div class="cv-entry-detail">Working with Gregory Soyez on [topic].</div>
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-date">2023 &ndash; 2025</div>
+                <div class="cv-entry-body">
+                    <div class="cv-entry-title">PhD Research &mdash; LIP Lisbon</div>
+                    <div class="cv-entry-sub">Laboratório de Instrumentação e Física Experimental de Partículas, Lisbon</div>
+                    <div class="cv-entry-detail">QCD phenomenology: perturbative evolution in vacuum and dense media, jet substructure, numerical simulation, and ML methods.</div>
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-date">[Year]</div>
+                <div class="cv-entry-body">
+                    <div class="cv-entry-title">[Position / Project title]</div>
+                    <div class="cv-entry-sub">[Institution]</div>
+                    <div class="cv-entry-detail">[Short description of work done.]</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ==================== PAPERS ==================== -->
+        <div class="cv-section">
+            <h2 class="cv-section-title">Papers</h2>
+
+            <div class="cv-paper">
+                <div class="cv-paper-title">
+                    <a href="#" target="_blank">[Paper title]</a>
+                </div>
+                <div class="cv-paper-authors"><strong>M. Leitão</strong>, [Co-author A], [Co-author B]</div>
+                <div class="cv-paper-journal">[Journal / Proceedings], [Year] &mdash; arXiv:[XXXX.XXXXX]</div>
+            </div>
+
+            <div class="cv-paper">
+                <div class="cv-paper-title">
+                    <a href="#" target="_blank">[Paper title]</a>
+                </div>
+                <div class="cv-paper-authors"><strong>M. Leitão</strong>, [Co-author A]</div>
+                <div class="cv-paper-journal">[Journal / Proceedings], [Year] &mdash; arXiv:[XXXX.XXXXX]</div>
+            </div>
+
+        </div>
+
+        <!-- ==================== TALKS ==================== -->
+        <div class="cv-section">
+            <h2 class="cv-section-title">Talks</h2>
+
+            <div class="cv-entry">
+                <div class="cv-entry-date">[Month Year]</div>
+                <div class="cv-entry-body">
+                    <div class="cv-entry-title">[Talk title]</div>
+                    <div class="cv-talk-venue">[Conference / Workshop name], [City, Country]</div>
+                    <div class="cv-entry-detail">[Invited / Contributed]</div>
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-date">[Month Year]</div>
+                <div class="cv-entry-body">
+                    <div class="cv-entry-title">[Talk title]</div>
+                    <div class="cv-talk-venue">[Conference / Workshop name], [City, Country]</div>
+                    <div class="cv-entry-detail">[Invited / Contributed]</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ==================== PRIZES AND AWARDS ==================== -->
+        <div class="cv-section">
+            <h2 class="cv-section-title">Prizes &amp; Awards</h2>
+
+            <div class="cv-entry">
+                <div class="cv-entry-date">[Year]</div>
+                <div class="cv-entry-body">
+                    <div class="cv-entry-title">[Prize / Award name]</div>
+                    <div class="cv-prize-desc">[Awarding institution / body]. [Brief description if needed.]</div>
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-date">[Year]</div>
+                <div class="cv-entry-body">
+                    <div class="cv-entry-title">[Prize / Award name]</div>
+                    <div class="cv-prize-desc">[Awarding institution / body].</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ==================== MENTORING ==================== -->
+        <div class="cv-section">
+            <h2 class="cv-section-title">Mentoring</h2>
+
+            <div class="cv-entry">
+                <div class="cv-entry-date">[Year]</div>
+                <div class="cv-entry-body">
+                    <div class="cv-entry-title">[Student name]</div>
+                    <div class="cv-mentee">[BSc / MSc] student at [Institution]. Project: [title or brief description].</div>
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-date">[Year]</div>
+                <div class="cv-entry-body">
+                    <div class="cv-entry-title">[Student name]</div>
+                    <div class="cv-mentee">[BSc / MSc] student at [Institution]. Project: [title or brief description].</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end .cv-page -->
+
+    <footer class="site-footer">
+        <p class="footer-email">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:[your-email]">[your-email]</a>
+        </p>
+        <ul class="footer-links">
+            <li>
+                <a href="[linkedin-url]" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="[inspire-url]" target="_blank" aria-label="INSPIRE-HEP">
+                    <i class="fas fa-atom"></i> INSPIRE
+                </a>
+            </li>
+            <li>
+                <a href="[orcid-url]" target="_blank" aria-label="ORCID">
+                    <i class="fab fa-orcid"></i> ORCID
+                </a>
+            </li>
+            <li>
+                <a href="[cienciavitae-url]" target="_blank" aria-label="CiênciaVitae">
+                    <i class="fas fa-id-card"></i> CiênciaVitae
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>

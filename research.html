@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Leitão - Research</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .page-spacer {
+            height: 72px;
+            width: 100%;
+        }
+
+        .research-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 2rem 4rem;
+        }
+
+        .research-page h1 {
+            font-family: var(--font-title);
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+            color: var(--secondary-color);
+        }
+
+        /* Each research topic block */
+        .research-topic {
+            margin-bottom: 3.5rem;
+        }
+
+        .research-topic-title {
+            font-family: var(--font-section-title);
+            font-size: 1.45rem;
+            color: rgba(25, 59, 73, 0.9);
+            border-bottom: 2px solid rgba(25, 59, 73, 0.25);
+            padding-bottom: 0.3rem;
+            margin-bottom: 1.2rem;
+        }
+
+        /* Figure + description side by side */
+        .research-topic-body {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        /* Alternate figure left/right for visual variety */
+        .research-topic:nth-child(even) .research-topic-body {
+            flex-direction: row-reverse;
+        }
+
+        .research-topic-figure {
+            flex: 0 0 300px;
+            max-width: 300px;
+        }
+
+        .research-topic-figure img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+            background: #dce8ec;
+            display: block;
+        }
+
+        /* Placeholder when no image is set */
+        .research-topic-figure .fig-placeholder {
+            width: 100%;
+            height: 200px;
+            border-radius: 6px;
+            background: linear-gradient(135deg, rgba(25,59,73,0.12), rgba(25,59,73,0.06));
+            border: 2px dashed rgba(25,59,73,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(25,59,73,0.45);
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .research-topic-figure figcaption {
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.4rem;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .research-topic-text {
+            flex: 1;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: #222;
+            line-height: 1.7;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        @media screen and (max-width: 650px) {
+            .research-topic-body,
+            .research-topic:nth-child(even) .research-topic-body {
+                flex-direction: column;
+            }
+            .research-topic-figure {
+                flex: unset;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Marco Leitão</div>
+            <ul class="nav-links">
+                <li><a href="index.html">About me</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-spacer" aria-hidden="true"></div>
+
+    <div class="research-page">
+
+        <h1>Research Interests</h1>
+
+        <!-- ===== Topic 1 ===== -->
+        <div class="research-topic">
+            <h2 class="research-topic-title">Jets in the quark-gluon plasma</h2>
+            <div class="research-topic-body">
+                <figure class="research-topic-figure">
+                    <!-- Replace with: <img src="images/qgp-jet.png" alt="Jet in QGP"> -->
+                    <div class="fig-placeholder">[Figure placeholder]</div>
+                    <figcaption>[Caption]</figcaption>
+                </figure>
+                <div class="research-topic-text">
+                    <p>
+                        [Description of jets in the quark-gluon plasma research. What happens to jets as they propagate through the dense medium produced in heavy-ion collisions? What observables encode medium modifications? Replace this text with your own.]
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== Topic 2 ===== -->
+        <div class="research-topic">
+            <h2 class="research-topic-title">Parton Showers</h2>
+            <div class="research-topic-body">
+                <figure class="research-topic-figure">
+                    <!-- Replace with: <img src="images/parton-shower.png" alt="Parton shower diagram"> -->
+                    <div class="fig-placeholder">[Figure placeholder]</div>
+                    <figcaption>[Caption]</figcaption>
+                </figure>
+                <div class="research-topic-text">
+                    <p>
+                        [Description of parton shower research. How do partons radiate and evolve perturbatively from a hard scattering scale down to hadronisation? What are the theoretical foundations and numerical implementations you work on? Replace this text with your own.]
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- end .research-page -->
+
+    <footer class="site-footer">
+        <p class="footer-email">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:[your-email]">[your-email]</a>
+        </p>
+        <ul class="footer-links">
+            <li>
+                <a href="[linkedin-url]" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="[inspire-url]" target="_blank" aria-label="INSPIRE-HEP">
+                    <i class="fas fa-atom"></i> INSPIRE
+                </a>
+            </li>
+            <li>
+                <a href="[orcid-url]" target="_blank" aria-label="ORCID">
+                    <i class="fab fa-orcid"></i> ORCID
+                </a>
+            </li>
+            <li>
+                <a href="[cienciavitae-url]" target="_blank" aria-label="CiênciaVitae">
+                    <i class="fas fa-id-card"></i> CiênciaVitae
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>
