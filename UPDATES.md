@@ -3,6 +3,9 @@
 Format and rules: see `AGENTS.md` §2.3–2.4. Newest entry on top.
 Entries above the first `(merged into main)` marker are pending on branch `a`.
 
+## [2026-11-01 21:55]
+16. Hero background no longer fades to white partway down — the soft blue now fills solidly all the way to the dividing line just above "About me" — Impact: the blue tint visibly covers the whole info area, with no washed-out gap before the About me section.
+
 ## [2026-11-01 21:52]
 15. Hero section (profile info area above "About me") on the home page now has a soft blue background instead of the dark-teal-tinted gradient — Impact: the top of the home page reads lighter and more welcoming before the About me section.
 

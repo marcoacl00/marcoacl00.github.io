@@ -289,7 +289,7 @@ nav {
 .hero {
     background:
         radial-gradient(ellipse at 85% 0%, rgba(29, 151, 184, 0.18), transparent 55%),
-        linear-gradient(180deg, var(--accent-soft), #fff);
+        var(--accent-soft);
     border-bottom: 1px solid var(--brand-soft);
 }
 
