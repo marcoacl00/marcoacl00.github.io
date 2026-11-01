@@ -831,3 +831,35 @@ nav {
         display: inline;
     }
 }
+
+/* Divider between research topics */
+.topic-divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.18), transparent);
+    margin: 0 auto 3.2rem;
+    width: 85%;
+}
+
+/* Featured publications under a research topic */
+.featured-pubs {
+    margin: -1.6rem 0 3.2rem;
+}
+
+.featured-pubs-title {
+    font-family: var(--font-section-title);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 0.6rem;
+}
+
+.featured-pubs .card {
+    padding: 0.9rem 1.2rem;
+}
+
+.featured-pubs .cv-paper-title { font-size: 0.95rem; }
+.featured-pubs .cv-paper-authors { font-size: 0.86rem; }
+.featured-pubs .cv-paper-journal { font-size: 0.82rem; }
+.featured-pubs .btn { font-size: 0.8rem; padding: 0.3rem 0.7rem; }
