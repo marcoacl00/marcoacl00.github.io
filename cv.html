@@ -4,184 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marco Leitão - CV</title>
+    <meta name="description" content="Curriculum vitae of Marco Leitão, PhD candidate in theoretical particle physics.">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .page-spacer {
-            height: 72px;
-            width: 100%;
-        }
-
-        /* CV layout */
-        .cv-page {
-            max-width: 860px;
-            margin: 0 auto;
-            padding: 2rem 2rem 4rem;
-        }
-
-        .cv-page h1 {
-            font-family: var(--font-title);
-            font-size: 2.4rem;
-            margin-bottom: 0.25rem;
-            color: var(--secondary-color);
-        }
-
-        .cv-page .cv-subtitle {
-            font-family: var(--font-body);
-            font-size: 1.05rem;
-            color: #444;
-            margin-bottom: 0.5rem;
-        }
-
-        .cv-download {
-            display: inline-block;
-            margin-top: 0.75rem;
-            margin-bottom: 2rem;
-            font-family: var(--font-body);
-            font-size: 0.95rem;
-            color: var(--links-color);
-            border: 1px solid var(--links-color);
-            padding: 0.4rem 1rem;
-            border-radius: 3px;
-            transition: background 0.2s, color 0.2s;
-        }
-
-        .cv-download:hover {
-            background: var(--links-color);
-            color: #fff;
-        }
-
-        /* Section headings */
-        .cv-section {
-            margin-bottom: 2.5rem;
-        }
-
-        .cv-section-title {
-            font-family: var(--font-section-title);
-            font-size: 1.5rem;
-            color: rgba(25, 59, 73, 0.9);
-            border-bottom: 2px solid rgba(25, 59, 73, 0.25);
-            padding-bottom: 0.3rem;
-            margin-bottom: 1.2rem;
-            letter-spacing: 0.5px;
-        }
-
-        /* Generic entry block */
-        .cv-entry {
-            display: flex;
-            gap: 1.5rem;
-            margin-bottom: 1.4rem;
-        }
-
-        .cv-entry-date {
-            min-width: 110px;
-            font-family: var(--font-body);
-            font-size: 0.88rem;
-            color: #666;
-            padding-top: 0.15rem;
-            white-space: nowrap;
-        }
-
-        .cv-entry-body {
-            flex: 1;
-        }
-
-        .cv-entry-title {
-            font-family: var(--font-body);
-            font-weight: bold;
-            font-size: 1rem;
-            color: var(--secondary-color);
-            margin-bottom: 0.1rem;
-        }
-
-        .cv-entry-title a {
-            color: var(--links-color);
-        }
-
-        .cv-entry-sub {
-            font-family: var(--font-body);
-            font-size: 0.95rem;
-            color: #333;
-        }
-
-        .cv-entry-detail {
-            font-family: var(--font-body);
-            font-size: 0.88rem;
-            color: #555;
-            margin-top: 0.2rem;
-        }
-
-        /* Papers list */
-        .cv-paper {
-            margin-bottom: 1.4rem;
-        }
-
-        .cv-paper-title {
-            font-family: var(--font-body);
-            font-weight: bold;
-            font-size: 1rem;
-            color: var(--secondary-color);
-        }
-
-        .cv-paper-title a {
-            color: var(--links-color);
-        }
-
-        .cv-paper-authors {
-            font-family: var(--font-body);
-            font-size: 0.92rem;
-            color: #444;
-            margin-top: 0.15rem;
-        }
-
-        .cv-paper-journal {
-            font-family: var(--font-body);
-            font-size: 0.88rem;
-            color: #666;
-            font-style: italic;
-            margin-top: 0.1rem;
-        }
-
-        /* Talks */
-        .cv-talk-venue {
-            font-family: var(--font-body);
-            font-size: 0.88rem;
-            color: #555;
-            margin-top: 0.1rem;
-        }
-
-        /* Prizes */
-        .cv-prize-desc {
-            font-family: var(--font-body);
-            font-size: 0.88rem;
-            color: #555;
-            margin-top: 0.1rem;
-        }
-
-        /* Mentoring */
-        .cv-mentee {
-            font-family: var(--font-body);
-            font-size: 0.88rem;
-            color: #555;
-            margin-top: 0.1rem;
-        }
-
-        @media screen and (max-width: 600px) {
-            .cv-entry {
-                flex-direction: column;
-                gap: 0.2rem;
-            }
-            .cv-entry-date {
-                min-width: unset;
-            }
-        }
-    </style>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Marco Leitão</div>
+            <a class="logo" href="index.html">Marco Leitão</a>
+            <button class="burger" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="line1"></span><span class="line2"></span><span class="line3"></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="index.html">About me</a></li>
                 <li><a href="research.html">Research</a></li>
@@ -191,203 +29,351 @@
         </nav>
     </header>
 
-    <div class="page-spacer" aria-hidden="true"></div>
+    <main>
+        <div class="container narrow">
 
-    <div class="cv-page">
-
-        <h1>Curriculum Vitae</h1>
-        <p class="cv-subtitle">Marco Leitão &mdash; PhD student in particle physics</p>
-        <!-- Replace href with the actual path to your PDF CV -->
-        <a class="cv-download" href="assets/cv.pdf" target="_blank">
-            <i class="fas fa-file-pdf"></i> Download PDF
-        </a>
-
-        <!-- ==================== EDUCATION ==================== -->
-        <div class="cv-section">
-            <h2 class="cv-section-title">Education</h2>
-
-            <div class="cv-entry">
-                <div class="cv-entry-date">2022 &ndash; present</div>
-                <div class="cv-entry-body">
-                    <div class="cv-entry-title">PhD in Physics</div>
-                    <div class="cv-entry-sub">LIP / Instituto Superior Técnico, University of Lisbon</div>
-                    <div class="cv-entry-detail">Supervised by Guilherme Milhano, Alba Soto-Ontoso, and Gregory Soyez.<br>
-                    Research stay at IPhT-Saclay (2025&ndash;2027).</div>
+            <div class="cv-header">
+                <div>
+                    <h1 class="page-title">Curriculum Vitae</h1>
+                    <p class="page-lead">Marco Leitão &mdash; PhD Candidate in Theoretical Particle Physics</p>
                 </div>
+                <!-- Uncomment once the compiled CV is placed at assets/cv.pdf
+                <a class="btn primary" href="assets/cv.pdf" target="_blank" rel="noopener">
+                    <i class="fas fa-file-pdf"></i> Download PDF
+                </a>
+                -->
             </div>
 
-            <div class="cv-entry">
-                <div class="cv-entry-date">2020 &ndash; 2022</div>
-                <div class="cv-entry-body">
-                    <div class="cv-entry-title">MSc in Engineering Physics</div>
-                    <div class="cv-entry-sub">Instituto Superior Técnico, University of Lisbon</div>
-                    <div class="cv-entry-detail">Thesis title: [Thesis title here]</div>
-                </div>
-            </div>
+            <!-- ==================== EDUCATION ==================== -->
+            <section class="cv-section reveal">
+                <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
 
-            <div class="cv-entry">
-                <div class="cv-entry-date">2017 &ndash; 2020</div>
-                <div class="cv-entry-body">
-                    <div class="cv-entry-title">BSc in Physics</div>
-                    <div class="cv-entry-sub">University of Porto</div>
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Sep 2024 &ndash; present<small>expected 2028</small></div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">PhD in Physics</div>
+                        <div class="cv-entry-sub">Instituto Superior Técnico, U. Lisboa &amp; U. Granada (cotutelle)</div>
+                        <div class="cv-entry-detail">Thesis: <em>Jet physics in the precision era of heavy-ion collisions</em><br>
+                            Supervisors: J.&nbsp;G.&nbsp;Milhano, A.&nbsp;Soto-Ontoso, G.&nbsp;Soyez</div>
+                    </div>
                 </div>
-            </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Sep 2021 &ndash; Dec 2023</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">MSc in Engineering Physics</div>
+                        <div class="cv-entry-sub">Instituto Superior Técnico, U. Lisboa</div>
+                        <div class="cv-entry-detail">Grade: 19/20</div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Sep 2018 &ndash; Jul 2021</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">BSc in Physics</div>
+                        <div class="cv-entry-sub">Universidade do Porto</div>
+                        <div class="cv-entry-detail">Grade: 18/20</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== RESEARCH EXPERIENCE ==================== -->
+            <section class="cv-section reveal">
+                <h2 class="section-title"><i class="fas fa-flask"></i> Research Experience</h2>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Sep 2024 &ndash; present</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">PhD Fellow &mdash; LIP Lisbon, IPhT Saclay and FTAE U. Granada</div>
+                        <div class="cv-entry-detail">Research carried out at each supervisor's institution. Funded by FCT I.P.</div>
+                        <ul class="cv-sublist">
+                            <li><strong>LIP Lisbon</strong>: Sep 2024 &ndash; Aug 2025, with J.&nbsp;G.&nbsp;Milhano. Jet quenching calculations</li>
+                            <li><strong>IPhT Saclay</strong>: Sep 2025 &ndash; present, with G.&nbsp;Soyez. PanScales parton showers, resummation, and Monte Carlo tuning with machine learning</li>
+                            <li><strong>FTAE Granada</strong>: Feb 2027 &ndash; Aug 2028 (planned, with A.&nbsp;Soto-Ontoso)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Apr 2023 &ndash; Aug 2024</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Research Student &mdash; LIP, Lisbon</div>
+                        <div class="cv-entry-detail">Master's thesis on in-medium energy-energy correlators; PhD preparation</div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Nov 2020 &ndash; Aug 2021</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Undergraduate Researcher &mdash; Fundação Calouste Gulbenkian</div>
+                        <div class="cv-entry-detail">Quantum computing algorithm simulation in Maxima CAS<br>Supervisor: J.&nbsp;Villate</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== PUBLICATIONS ==================== -->
+            <section class="cv-section reveal">
+                <h2 class="section-title"><i class="fas fa-book-open"></i> Publications</h2>
+
+                <div class="card cv-paper">
+                    <div class="cv-paper-title">
+                        <a href="https://arxiv.org/abs/2606.26039" target="_blank" rel="noopener">In-medium QCD splittings beyond the soft, large-N<sub>c</sub> and harmonic-oscillator approximations all at once</a>
+                    </div>
+                    <div class="cv-paper-authors"><strong>M. Leitão</strong>, J. G. Milhano, A. Soto-Ontoso</div>
+                    <div class="cv-paper-journal">Phys. Rev. Lett. (in revision), 2026 &mdash; arXiv:2606.26039</div>
+                </div>
+            </section>
+
+            <!-- ==================== TALKS & POSTERS ==================== -->
+            <section class="cv-section reveal">
+                <h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Talks and Posters</h2>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Dec 2026</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">A decade of jet substructure in heavy-ion collisions, CERN <span class="badge">invited</span></div>
+                        <div class="cv-entry-detail">Workshop &middot; <em>title TBD</em></div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Nov 2026</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">CPHT, École Polytechnique <span class="badge">invited</span></div>
+                        <div class="cv-entry-detail">Seminar &middot; <em>Towards precision QCD for jet physics in heavy-ion collisions</em></div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Jul 2026</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">EMMI: Probing early stages with jets, GSI</div>
+                        <div class="cv-entry-detail">Workshop &middot; <em>In-medium QCD splittings beyond the soft, large-N<sub>c</sub> and harmonic-oscillator approximations</em></div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Jun 2026</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Brookhaven National Laboratory <span class="badge">invited</span></div>
+                        <div class="cv-entry-detail">Seminar &middot; <em>In-medium QCD splittings beyond the soft, large-N<sub>c</sub> and harmonic-oscillator approximations</em></div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Jun 2026</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Hard Probes 2026, Vanderbilt University</div>
+                        <div class="cv-entry-detail">Conference, parallel session &middot; <em>QCD in-medium splitting kernels with full colour and exact kinematics</em></div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Jan 2026</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Excited QCD 2026, Granada</div>
+                        <div class="cv-entry-detail">Conference &middot; <em>Effective parton splitting functions in dense QCD media</em></div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Jun 2025</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">FTAE, U. Granada</div>
+                        <div class="cv-entry-detail">Seminar &middot; <em>Advancing our understanding of in-medium QCD splittings</em></div>
+                    </div>
+                </div>
+
+                <h3 class="cv-sublabel">Posters</h3>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">May 2026</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">LHCP 2026 <span class="badge gold">best poster</span></div>
+                        <div class="cv-entry-detail"><em>In-medium QCD splittings beyond the soft, large-N<sub>c</sub> and harmonic-oscillator approximations all at once</em></div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Apr 2025</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Quark Matter 2025</div>
+                        <div class="cv-entry-detail"><em>Advancing our understanding of in-medium QCD splittings</em></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== HONORS ==================== -->
+            <section class="cv-section reveal">
+                <h2 class="section-title"><i class="fas fa-award"></i> Honors</h2>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">May 2026</div>
+                    <div class="cv-entry-body"><div class="cv-entry-title">LHCP 2026 Best Poster Award</div></div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Mar 2025, 2026</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Excellence in Teaching</div>
+                        <div class="cv-entry-detail">Mechanics 23/24 and Computational Physics 24/25</div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Aug 2024</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">FCT PhD Scholarship</div>
+                        <div class="cv-entry-detail">Competitive national call</div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Apr 2024</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Academic Merit Award, IST</div>
+                        <div class="cv-entry-detail">Excellent performance in 2023/24</div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Oct 2021</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Prof. Moreira de Araújo Prize, U. Porto</div>
+                        <div class="cv-entry-detail">Highest grade in BSc Physics</div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Nov 2020</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">New Talents Scholarship, Fundação Calouste Gulbenkian</div>
+                        <div class="cv-entry-detail">Competitive research initiation grant</div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Mar 2020</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Prémio Incentivo, U. Porto</div>
+                        <div class="cv-entry-detail">Best first-year students of the University (<a href="https://noticias.up.pt/2020/03/15/marco-leitao-fonte-de-motivacao-para-continuar-o-bom-trabalho/" target="_blank" rel="noopener">interview</a>)</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== VISITS & SCHOOLS ==================== -->
+            <section class="cv-section reveal">
+                <h2 class="section-title"><i class="fas fa-plane"></i> Short Visits and Doctoral Schools</h2>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Jan/Feb 2027</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">CERN, TH Department (6 weeks)</div>
+                        <div class="cv-entry-detail">Collaboration with G. Milhano</div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Jun/Jul 2026</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Brookhaven National Laboratory, Nuclear Theory Group (1 week)</div>
+                        <div class="cv-entry-detail">Host: Y.&nbsp;Mehtar-Tani; jet quenching and small-<em>x</em> physics</div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Jun 2026</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">CERN, TH Department (1 week)</div>
+                        <div class="cv-entry-detail">PanScales collaboration meeting</div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Feb 2026</div>
+                    <div class="cv-entry-body"><div class="cv-entry-title">Frontiers in Nuclear and Hadronic Physics School, GGI Florence</div></div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Jul 2025</div>
+                    <div class="cv-entry-body"><div class="cv-entry-title">Parton Showers and Resummation School, CERN</div></div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Jun 2024</div>
+                    <div class="cv-entry-body"><div class="cv-entry-title">GDR QCD Summer School, IJCLab</div></div>
+                </div>
+            </section>
+
+            <!-- ==================== TEACHING ==================== -->
+            <section class="cv-section reveal">
+                <h2 class="section-title"><i class="fas fa-chalkboard"></i> Teaching</h2>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">2023 &ndash; 2025</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Teaching Assistant, BSc Engineering Physics, IST</div>
+                        <div class="cv-entry-sub">Computational Physics; Mechanics</div>
+                        <div class="cv-entry-detail">Practical classes, tutoring, exam creation and grading</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== MENTORING ==================== -->
+            <section class="cv-section reveal">
+                <h2 class="section-title"><i class="fas fa-users"></i> Mentoring</h2>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Jun &ndash; Sep 2026</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Supervisor, LIP internship</div>
+                        <div class="cv-entry-sub"><em>Tensor networks for in-medium particle dynamics</em></div>
+                        <div class="cv-entry-detail">D.&nbsp;André (IST), M.&nbsp;Magalhães (U. Coimbra), P.&nbsp;Oliveira (IST)</div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Jun &ndash; Sep 2025</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Supervisor, LIP internship</div>
+                        <div class="cv-entry-sub"><em>In-medium propagation of particles as an open quantum system</em></div>
+                        <div class="cv-entry-detail">Ó.&nbsp;Alves (EPFL), S.&nbsp;Crispim (IST), M.&nbsp;Gama (IST)</div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Jun &ndash; Sep 2025</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Supervisor, LIP internship</div>
+                        <div class="cv-entry-sub"><em>HEP numerical simulations with GPUs and machine learning</em></div>
+                        <div class="cv-entry-detail">A.&nbsp;Giedraitis (KTU Kaunas, Erasmus+), T.&nbsp;Vistas (IST), F.&nbsp;Ponte (FCUL)</div>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-date">Feb &ndash; Jul 2025</div>
+                    <div class="cv-entry-body">
+                        <div class="cv-entry-title">Co-supervisor (with J.&nbsp;G.&nbsp;Milhano), BSc thesis, IST</div>
+                        <div class="cv-entry-detail">G.&nbsp;Monteiro</div>
+                    </div>
+                </div>
+            </section>
 
         </div>
-
-        <!-- ==================== RESEARCH EXPERIENCE ==================== -->
-        <div class="cv-section">
-            <h2 class="cv-section-title">Research Experience</h2>
-
-            <div class="cv-entry">
-                <div class="cv-entry-date">2025 &ndash; 2027</div>
-                <div class="cv-entry-body">
-                    <div class="cv-entry-title">Research Stay &mdash; IPhT-Saclay</div>
-                    <div class="cv-entry-sub">Institut de Physique Théorique, CEA Saclay, France</div>
-                    <div class="cv-entry-detail">Working with Gregory Soyez on [topic].</div>
-                </div>
-            </div>
-
-            <div class="cv-entry">
-                <div class="cv-entry-date">2023 &ndash; 2025</div>
-                <div class="cv-entry-body">
-                    <div class="cv-entry-title">PhD Research &mdash; LIP Lisbon</div>
-                    <div class="cv-entry-sub">Laboratório de Instrumentação e Física Experimental de Partículas, Lisbon</div>
-                    <div class="cv-entry-detail">QCD phenomenology: perturbative evolution in vacuum and dense media, jet substructure, numerical simulation, and ML methods.</div>
-                </div>
-            </div>
-
-            <div class="cv-entry">
-                <div class="cv-entry-date">[Year]</div>
-                <div class="cv-entry-body">
-                    <div class="cv-entry-title">[Position / Project title]</div>
-                    <div class="cv-entry-sub">[Institution]</div>
-                    <div class="cv-entry-detail">[Short description of work done.]</div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- ==================== PAPERS ==================== -->
-        <div class="cv-section">
-            <h2 class="cv-section-title">Papers</h2>
-
-            <div class="cv-paper">
-                <div class="cv-paper-title">
-                    <a href="#" target="_blank">[Paper title]</a>
-                </div>
-                <div class="cv-paper-authors"><strong>M. Leitão</strong>, [Co-author A], [Co-author B]</div>
-                <div class="cv-paper-journal">[Journal / Proceedings], [Year] &mdash; arXiv:[XXXX.XXXXX]</div>
-            </div>
-
-            <div class="cv-paper">
-                <div class="cv-paper-title">
-                    <a href="#" target="_blank">[Paper title]</a>
-                </div>
-                <div class="cv-paper-authors"><strong>M. Leitão</strong>, [Co-author A]</div>
-                <div class="cv-paper-journal">[Journal / Proceedings], [Year] &mdash; arXiv:[XXXX.XXXXX]</div>
-            </div>
-
-        </div>
-
-        <!-- ==================== TALKS ==================== -->
-        <div class="cv-section">
-            <h2 class="cv-section-title">Talks</h2>
-
-            <div class="cv-entry">
-                <div class="cv-entry-date">[Month Year]</div>
-                <div class="cv-entry-body">
-                    <div class="cv-entry-title">[Talk title]</div>
-                    <div class="cv-talk-venue">[Conference / Workshop name], [City, Country]</div>
-                    <div class="cv-entry-detail">[Invited / Contributed]</div>
-                </div>
-            </div>
-
-            <div class="cv-entry">
-                <div class="cv-entry-date">[Month Year]</div>
-                <div class="cv-entry-body">
-                    <div class="cv-entry-title">[Talk title]</div>
-                    <div class="cv-talk-venue">[Conference / Workshop name], [City, Country]</div>
-                    <div class="cv-entry-detail">[Invited / Contributed]</div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- ==================== PRIZES AND AWARDS ==================== -->
-        <div class="cv-section">
-            <h2 class="cv-section-title">Prizes &amp; Awards</h2>
-
-            <div class="cv-entry">
-                <div class="cv-entry-date">[Year]</div>
-                <div class="cv-entry-body">
-                    <div class="cv-entry-title">[Prize / Award name]</div>
-                    <div class="cv-prize-desc">[Awarding institution / body]. [Brief description if needed.]</div>
-                </div>
-            </div>
-
-            <div class="cv-entry">
-                <div class="cv-entry-date">[Year]</div>
-                <div class="cv-entry-body">
-                    <div class="cv-entry-title">[Prize / Award name]</div>
-                    <div class="cv-prize-desc">[Awarding institution / body].</div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- ==================== MENTORING ==================== -->
-        <div class="cv-section">
-            <h2 class="cv-section-title">Mentoring</h2>
-
-            <div class="cv-entry">
-                <div class="cv-entry-date">[Year]</div>
-                <div class="cv-entry-body">
-                    <div class="cv-entry-title">[Student name]</div>
-                    <div class="cv-mentee">[BSc / MSc] student at [Institution]. Project: [title or brief description].</div>
-                </div>
-            </div>
-
-            <div class="cv-entry">
-                <div class="cv-entry-date">[Year]</div>
-                <div class="cv-entry-body">
-                    <div class="cv-entry-title">[Student name]</div>
-                    <div class="cv-mentee">[BSc / MSc] student at [Institution]. Project: [title or brief description].</div>
-                </div>
-            </div>
-
-        </div>
-
-    </div><!-- end .cv-page -->
+    </main>
 
     <footer class="site-footer">
         <p class="footer-email">
             <i class="fas fa-envelope"></i>
-            <a href="mailto:[your-email]">[your-email]</a>
+            <a href="mailto:mleitao@lip.pt">mleitao@lip.pt</a>
         </p>
         <ul class="footer-links">
-            <li>
-                <a href="[linkedin-url]" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-            </li>
-            <li>
-                <a href="[inspire-url]" target="_blank" aria-label="INSPIRE-HEP">
-                    <i class="fas fa-atom"></i> INSPIRE
-                </a>
-            </li>
-            <li>
-                <a href="[orcid-url]" target="_blank" aria-label="ORCID">
-                    <i class="fab fa-orcid"></i> ORCID
-                </a>
-            </li>
-            <li>
-                <a href="[cienciavitae-url]" target="_blank" aria-label="CiênciaVitae">
-                    <i class="fas fa-id-card"></i> CiênciaVitae
-                </a>
-            </li>
+            <!-- <li><a href="[linkedin-url]" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a></li> -->
+            <li><a href="https://inspirehep.net/authors/2862221" target="_blank" rel="noopener" aria-label="INSPIRE-HEP"><i class="fas fa-atom"></i> INSPIRE</a></li>
+            <li><a href="https://orcid.org/0009-0007-1629-8912" target="_blank" rel="noopener" aria-label="ORCID"><i class="fab fa-orcid"></i> ORCID</a></li>
+            <!-- <li><a href="[cienciavitae-url]" target="_blank" rel="noopener" aria-label="CiênciaVitae"><i class="fas fa-id-card"></i> CiênciaVitae</a></li> -->
         </ul>
+        <p class="footer-copy">&copy; 2026 Marco Leitão</p>
     </footer>
-
 </body>
 </html>

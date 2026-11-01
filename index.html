@@ -4,88 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marco Leitão - Personal Website</title>
+    <meta name="description" content="Marco Leitão — PhD candidate in theoretical particle physics (jet physics, parton showers, QCD in the quark-gluon plasma).">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-
-
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Marco Leitão</div>
+            <a class="logo" href="index.html">Marco Leitão</a>
+            <button class="burger" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="line1"></span><span class="line2"></span><span class="line3"></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="index.html">About me</a></li>
                 <li><a href="research.html">Research</a></li>
                 <li><a href="cv.html">CV</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-
         </nav>
     </header>
 
-    <div class="page-spacer" aria-hidden="true"></div>
-    <style>
-    .page-spacer {
-        height: 32px;
-        width: 100%;
-    }
-    </style>
-    <section class="hero" style="margin-bottom:0px;">
-        <div class="container" style="display:flex;flex-direction:column;align-items:center;gap:4px;flex-wrap:wrap;">
-            <figure style="margin:0;display:flex;flex-direction:column;align-items:center;"></figure>
-                <img src="assets/1691430333522.jpg" alt="Marco Leitão" class="profile-photo" style="max-width:512px;width:100%;height:auto;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-                <div style="text-align:center;">
-                <h1 style="margin:8px 0 0;font-family:Arial, Helvetica, sans-serif;">Me</h1>
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <figure class="hero-photo">
+                    <img src="assets/1691430333522.jpg" alt="Marco Leitão">
+                    <figcaption>as of August 2023</figcaption>
+                </figure>
+                <div class="hero-text">
+                    <h1>Marco Leitão</h1>
+                    <p class="hero-role">PhD Candidate in Theoretical Particle Physics</p>
+                    <ul class="hero-affil">
+                        <li><i class="fas fa-map-marker-alt"></i> IPhT, CEA Saclay &mdash; research stay</li>
+                        <li><i class="fas fa-university"></i> IST, U. Lisboa &amp; U. Granada (cotutelle)</li>
+                        <li><i class="fas fa-atom"></i> LIP Lisbon</li>
+                    </ul>
+                    <div class="hero-links">
+                        <a class="btn primary" href="cv.html"><i class="fas fa-file-alt"></i> CV</a>
+                        <a class="btn" href="research.html"><i class="fas fa-flask"></i> Research</a>
+                        <a class="btn" href="https://inspirehep.net/authors/2862221" target="_blank" rel="noopener"><i class="fas fa-book"></i> INSPIRE</a>
+                        <a class="btn" href="mailto:mleitao@lip.pt"><i class="fas fa-envelope"></i> Email</a>
+                    </div>
                 </div>
-                <figcaption style="margin-top:8px;color:#555;font-family:Montserrat, sans-serif;font-size:16px;text-align:center;">as of August 2023</figcaption>
-            </figure>
-            
-        </div>
-    </section>
-    
-    <section id="about" class="about" style="margin-top:0;padding-top:0;">
-        <div class="container" style="padding-top:0;">
-            <p class="intro-text" style="font-size:24px;">Hello! I am a PhD student in particle physics, currently based at IPhT-Saclay for a research stay until January 2027. My work is supervised by <a href="https://th-dep.web.cern.ch/roster/teixeira-de-almeida-milhano-jose-guilherme" target="_blank" >Guilherme Milhano</a> (LIP/IST), <a href="https://ftae.ugr.es/pages/member/member/155" target="_blank">Alba Soto-Ontoso</a> (U. Granada) and <a href="https://soyez.fastjet.fr/" target="_blank">Gregory Soyez</a> (IPhT). I also spent one year of my PhD at LIP-Lisbon. I did my undergraduate studies at University of Porto and my master's at Instituto Superior Técnico, University of Lisbon. 
-            <br>
-            <br>
-            My research focuses on QCD phenomenology, with an emphasis in the perturbative evolution of particles both in vacuum and in a dense medium. Alongside this, a major interest of mine is in scientific computing, namely numerical simulation methods, high performance computing and Machine Learning tools, which I employ in my PhD research on a regular basis.
-            <br>
-            <br>
-            I am also interested in the training of young undergraduate students, and supporting independent, curiosity-driven projects - especially those that connect different areas of physics and computation.
+            </div>
+        </section>
 
-            </p>
-        </div>
-    </section>
+        <section id="about" class="about">
+            <div class="container narrow">
+                <h2 class="section-title reveal"><i class="fas fa-user"></i> About me</h2>
+                <div class="intro-text prose reveal">
+                    <p>Hello! I am a PhD student in particle physics, currently based at IPhT-Saclay for a research stay until January 2027. My work is supervised by <a href="https://th-dep.web.cern.ch/roster/teixeira-de-almeida-milhano-jose-guilherme" target="_blank" rel="noopener">Guilherme Milhano</a> (LIP/IST), <a href="https://ftae.ugr.es/pages/member/member/155" target="_blank" rel="noopener">Alba Soto-Ontoso</a> (U. Granada) and <a href="https://soyez.fastjet.fr/" target="_blank" rel="noopener">Gregory Soyez</a> (IPhT). I also spent one year of my PhD at LIP-Lisbon. I did my undergraduate studies at University of Porto and my master's at Instituto Superior Técnico, University of Lisbon.</p>
+                    <p>My research focuses on QCD phenomenology, with an emphasis in the perturbative evolution of particles both in vacuum and in a dense medium. Alongside this, a major interest of mine is in scientific computing, namely numerical simulation methods, high performance computing and Machine Learning tools, which I employ in my PhD research on a regular basis.</p>
+                    <p>I am also interested in the training of young undergraduate students, and supporting independent, curiosity-driven projects - especially those that connect different areas of physics and computation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="container narrow">
+                <h2 class="section-title reveal"><i class="fas fa-bullhorn"></i> News</h2>
+                <ul class="news-list prose reveal">
+                    <li><span class="news-date">Dec 2026</span><span>Invited talk at the workshop <em>A decade of jet substructure in heavy-ion collisions</em>, CERN.</span></li>
+                    <li><span class="news-date">Nov 2026</span><span>Invited seminar at CPHT, École Polytechnique: <em>Towards precision QCD for jet physics in heavy-ion collisions</em>.</span></li>
+                    <li><span class="news-date">Jul 2026</span><span>Talk at the EMMI workshop <em>Probing early stages with jets</em>, GSI.</span></li>
+                    <li><span class="news-date">Jun 2026</span><span>Invited seminar at Brookhaven National Laboratory and parallel talk at Hard Probes 2026, Vanderbilt University.</span></li>
+                    <li><span class="news-date">Jun 2026</span><span>New paper: <a href="https://arxiv.org/abs/2606.26039" target="_blank" rel="noopener"><em>In-medium QCD splittings beyond the soft, large-N<sub>c</sub> and harmonic-oscillator approximations all at once</em></a>, with J.&nbsp;G.&nbsp;Milhano and A.&nbsp;Soto-Ontoso.</span></li>
+                    <li><span class="news-date">May 2026</span><span>Received the <strong>Best Poster Award</strong> at LHCP 2026.</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
     <footer class="site-footer">
         <p class="footer-email">
             <i class="fas fa-envelope"></i>
-            <a href="mailto:[your-email]">[your-email]</a>
+            <a href="mailto:mleitao@lip.pt">mleitao@lip.pt</a>
         </p>
         <ul class="footer-links">
-            <li>
-                <a href="[linkedin-url]" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-            </li>
-            <li>
-                <a href="[inspire-url]" target="_blank" aria-label="INSPIRE-HEP">
-                    <i class="fas fa-atom"></i> INSPIRE
-                </a>
-            </li>
-            <li>
-                <a href="[orcid-url]" target="_blank" aria-label="ORCID">
-                    <i class="fab fa-orcid"></i> ORCID
-                </a>
-            </li>
-            <li>
-                <a href="[cienciavitae-url]" target="_blank" aria-label="CiênciaVitae">
-                    <i class="fas fa-id-card"></i> CiênciaVitae
-                </a>
-            </li>
+            <!-- <li><a href="[linkedin-url]" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a></li> -->
+            <li><a href="https://inspirehep.net/authors/2862221" target="_blank" rel="noopener" aria-label="INSPIRE-HEP"><i class="fas fa-atom"></i> INSPIRE</a></li>
+            <li><a href="https://orcid.org/0009-0007-1629-8912" target="_blank" rel="noopener" aria-label="ORCID"><i class="fab fa-orcid"></i> ORCID</a></li>
+            <!-- <li><a href="[cienciavitae-url]" target="_blank" rel="noopener" aria-label="CiênciaVitae"><i class="fas fa-id-card"></i> CiênciaVitae</a></li> -->
         </ul>
+        <p class="footer-copy">&copy; 2026 Marco Leitão</p>
     </footer>
-
 </body>
 </html>
