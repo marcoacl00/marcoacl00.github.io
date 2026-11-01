@@ -58,3 +58,19 @@ Read this whole file before doing anything in this repository.
   ```
 
 - Reverted items are only dropped from the log when the next merge into `main` consolidates the entries.
+
+### 2.5 After an update
+
+- Run "preview.sh" immediately after proposing your changes, so that the owner sees the website right away.
+Keep it running until the owner closes the tab on the browser.
+
+### 2.6 Markdown files are git-ignored
+
+- Except for `README.md`, every `.md` file — `AGENTS.md`, `PROJECT.md`, `UPDATES.md`, `CLAUDE.md`,
+  and any other `.md` file — is listed in `.gitignore` and untracked. They are not staged, not
+  committed, and not part of what `main` publishes.
+- They still live on disk and must still be read, kept up to date, and logged exactly as described
+  in sections 1, 2.3 and 2.4. "Git-ignored" only means `git status`/`git diff`/`git log` won't show
+  them; edit them normally, just don't expect `git add`/`git commit` to pick them up.
+- A fresh clone of this repository will **not** include them (git history has nothing to restore
+  them from). If one is missing locally, recreate it before proceeding.

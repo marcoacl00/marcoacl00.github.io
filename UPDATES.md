@@ -3,6 +3,9 @@
 Format and rules: see `AGENTS.md` §2.3–2.4. Newest entry on top.
 Entries above the first `(merged into main)` marker are pending on branch `a`.
 
+## [2026-11-01 22:00]
+17. Added `.gitignore` ignoring all `.md` files except `README.md`, and untracked `AGENTS.md`, `PROJECT.md`, `UPDATES.md` and `CLAUDE.md` from git (`git rm --cached`) — Impact: none for visitors; these docs still exist and are kept up to date on disk, but no longer appear in `git status`/commits or in what `main` publishes. Documented this in `AGENTS.md` §2.6.
+
 ## [2026-11-01 21:55]
 16. Hero background no longer fades to white partway down — the soft blue now fills solidly all the way to the dividing line just above "About me" — Impact: the blue tint visibly covers the whole info area, with no washed-out gap before the About me section.
 
