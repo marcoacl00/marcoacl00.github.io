@@ -25,6 +25,12 @@ else
     echo "Serving branch '$BRANCH' ($(git -C "$REPO" log -1 --format='%h %ci' "$BRANCH"))"
 fi
 
+# Stop a previous preview still holding the port (it would serve a stale snapshot).
+if pkill -f "http.server $PORT --bind 127.0.0.1" 2>/dev/null; then
+    echo "Stopped previous preview on port $PORT"
+    sleep 0.5
+fi
+
 URL="http://localhost:$PORT/index.html"
 echo "Open $URL  (Ctrl+C to stop)"
 ( sleep 1; xdg-open "$URL" >/dev/null 2>&1 || open "$URL" >/dev/null 2>&1 || true ) &
