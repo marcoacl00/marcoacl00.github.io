@@ -23,9 +23,9 @@
     --light-text: #ffffff;
     --bg-alt: #f4f7f8;
 
-    --font-title: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+    --font-title: sans-serif, ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
     --font-body: Arial, Helvetica, sans-serif;
-    --font-section-title: "IBM Plex Mono", ui-monospace, monospace;
+    --font-section-title: "Lucida Console", sans-serif, ui-monospace, monospace;
 
     --header-h: 64px;
     --radius: 8px;
