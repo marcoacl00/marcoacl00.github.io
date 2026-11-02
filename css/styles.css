@@ -15,7 +15,7 @@
     --brand-soft: rgba(25, 59, 73, 0.07);
     --brand-line: rgba(25, 59, 73, 0.2);
     --accent-color: rgb(29, 151, 184);
-    --accent-soft: rgba(29, 151, 184, 0.1);
+    --accent-soft: rgba(157, 197, 208, 0.1);
     --links-color: #056353;
     --links-hover: #0a8a73;
     --text-color: #1d2328;
@@ -23,9 +23,9 @@
     --light-text: #ffffff;
     --bg-alt: #f4f7f8;
 
-    --font-title: sans-serif, ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+    --font-title: "Liberation Mono", sans-serif, ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
     --font-body: Arial, Helvetica, sans-serif;
-    --font-section-title: "Lucida Console", sans-serif, ui-monospace, monospace;
+    --font-section-title: "Liberation Mono", sans-serif, ui-monospace, monospace;
 
     --header-h: 64px;
     --radius: 8px;
@@ -288,7 +288,7 @@ nav {
 /* 5. Home page ------------------------------------------------------------- */
 .hero {
     background:
-        radial-gradient(ellipse at 85% 0%, rgba(29, 151, 184, 0.18), transparent 55%),
+        radial-gradient(ellipse at 0% 0%, rgba(186, 200, 211, 0.423), transparent 60%),
         var(--accent-soft);
     border-bottom: 1px solid var(--brand-soft);
 }
